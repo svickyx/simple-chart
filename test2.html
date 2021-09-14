@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Chart</title>
+    <style>
+      /* style here */
+      body {
+        background: #eaeaea;
+      }
+      .interviewee {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        line-height: 1em;
+        padding: 0.5em 0.8em;
+        background: white;
+        opacity: 0.8;
+        border-radius: 1em 0 0 0;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+      .chart-container {
+        position: relative;
+        width: 80vw;
+        height: 60vh;
+        margin: 50px auto;
+      }
+
+      @media screen and (max-width: 700px) {
+        .chart-container {
+          width: 90vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chart Example</h1>
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
